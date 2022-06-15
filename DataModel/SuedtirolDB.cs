@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using Swashbuckle.AspNetCore.Annotations;
@@ -3239,6 +3239,7 @@ namespace DataModel
     {
         public DateTime From { get; set; }
         public DateTime To { get; set; }
+        [SwaggerSchema("Every day of the term is considered as a single event. This field is a boolean.")]
         public bool? SingleDays { get; set; }
         public int? MinPersons { get; set; }
         public int? MaxPersons { get; set; }
